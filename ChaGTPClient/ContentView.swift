@@ -47,11 +47,11 @@ struct ContentView: View {
             }
 
             ScrollView {
-               
                 ForEach(models, id: \.self) { string in
                     HStack {
+                        Text(string)
+                            .padding()
                         Spacer()
-                        Text(string).padding()
                     }
                 }
             }
@@ -61,7 +61,8 @@ struct ContentView: View {
                     .padding()
                 Button("Send") {
                     send()
-                }.padding()
+                }
+                .padding()
             }
         }
         .onAppear {
