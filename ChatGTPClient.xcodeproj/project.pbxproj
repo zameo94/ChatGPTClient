@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		95C69F422A2CE71F003733EF /* ChaGTPClientApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C69F412A2CE71F003733EF /* ChaGTPClientApp.swift */; };
-		95C69F442A2CE71F003733EF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C69F432A2CE71F003733EF /* ContentView.swift */; };
 		95C69F462A2CE721003733EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95C69F452A2CE721003733EF /* Assets.xcassets */; };
 		95C69F492A2CE721003733EF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95C69F482A2CE721003733EF /* Preview Assets.xcassets */; };
 		95C69F532A2CE721003733EF /* ChaGTPClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C69F522A2CE721003733EF /* ChaGTPClientTests.swift */; };
 		95C69F5D2A2CE721003733EF /* ChaGTPClientUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C69F5C2A2CE721003733EF /* ChaGTPClientUITests.swift */; };
 		95C69F5F2A2CE721003733EF /* ChaGTPClientUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C69F5E2A2CE721003733EF /* ChaGTPClientUITestsLaunchTests.swift */; };
+		95C69F6D2A2CE76E003733EF /* OpenAISwift in Frameworks */ = {isa = PBXBuildFile; productRef = 95C69F6C2A2CE76E003733EF /* OpenAISwift */; };
+		95C69F6E2A2CFD93003733EF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C69F432A2CE71F003733EF /* ContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,14 +35,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		95C69F3E2A2CE71F003733EF /* ChaGTPClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChaGTPClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		95C69F3E2A2CE71F003733EF /* ChatGTPClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatGTPClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95C69F412A2CE71F003733EF /* ChaGTPClientApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChaGTPClientApp.swift; sourceTree = "<group>"; };
 		95C69F432A2CE71F003733EF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		95C69F452A2CE721003733EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		95C69F482A2CE721003733EF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		95C69F4E2A2CE721003733EF /* ChaGTPClientTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChaGTPClientTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		95C69F4E2A2CE721003733EF /* ChatGTPClientTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChatGTPClientTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		95C69F522A2CE721003733EF /* ChaGTPClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChaGTPClientTests.swift; sourceTree = "<group>"; };
-		95C69F582A2CE721003733EF /* ChaGTPClientUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChaGTPClientUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		95C69F582A2CE721003733EF /* ChatGTPClientUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChatGTPClientUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		95C69F5C2A2CE721003733EF /* ChaGTPClientUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChaGTPClientUITests.swift; sourceTree = "<group>"; };
 		95C69F5E2A2CE721003733EF /* ChaGTPClientUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChaGTPClientUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -51,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95C69F6D2A2CE76E003733EF /* OpenAISwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,9 +86,9 @@
 		95C69F3F2A2CE71F003733EF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				95C69F3E2A2CE71F003733EF /* ChaGTPClient.app */,
-				95C69F4E2A2CE721003733EF /* ChaGTPClientTests.xctest */,
-				95C69F582A2CE721003733EF /* ChaGTPClientUITests.xctest */,
+				95C69F3E2A2CE71F003733EF /* ChatGTPClient.app */,
+				95C69F4E2A2CE721003733EF /* ChatGTPClientTests.xctest */,
+				95C69F582A2CE721003733EF /* ChatGTPClientUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -130,9 +132,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		95C69F3D2A2CE71F003733EF /* ChaGTPClient */ = {
+		95C69F3D2A2CE71F003733EF /* ChatGTPClient */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 95C69F622A2CE721003733EF /* Build configuration list for PBXNativeTarget "ChaGTPClient" */;
+			buildConfigurationList = 95C69F622A2CE721003733EF /* Build configuration list for PBXNativeTarget "ChatGTPClient" */;
 			buildPhases = (
 				95C69F3A2A2CE71F003733EF /* Sources */,
 				95C69F3B2A2CE71F003733EF /* Frameworks */,
@@ -142,14 +144,17 @@
 			);
 			dependencies = (
 			);
-			name = ChaGTPClient;
+			name = ChatGTPClient;
+			packageProductDependencies = (
+				95C69F6C2A2CE76E003733EF /* OpenAISwift */,
+			);
 			productName = ChaGTPClient;
-			productReference = 95C69F3E2A2CE71F003733EF /* ChaGTPClient.app */;
+			productReference = 95C69F3E2A2CE71F003733EF /* ChatGTPClient.app */;
 			productType = "com.apple.product-type.application";
 		};
-		95C69F4D2A2CE721003733EF /* ChaGTPClientTests */ = {
+		95C69F4D2A2CE721003733EF /* ChatGTPClientTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 95C69F652A2CE721003733EF /* Build configuration list for PBXNativeTarget "ChaGTPClientTests" */;
+			buildConfigurationList = 95C69F652A2CE721003733EF /* Build configuration list for PBXNativeTarget "ChatGTPClientTests" */;
 			buildPhases = (
 				95C69F4A2A2CE721003733EF /* Sources */,
 				95C69F4B2A2CE721003733EF /* Frameworks */,
@@ -160,14 +165,14 @@
 			dependencies = (
 				95C69F502A2CE721003733EF /* PBXTargetDependency */,
 			);
-			name = ChaGTPClientTests;
+			name = ChatGTPClientTests;
 			productName = ChaGTPClientTests;
-			productReference = 95C69F4E2A2CE721003733EF /* ChaGTPClientTests.xctest */;
+			productReference = 95C69F4E2A2CE721003733EF /* ChatGTPClientTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		95C69F572A2CE721003733EF /* ChaGTPClientUITests */ = {
+		95C69F572A2CE721003733EF /* ChatGTPClientUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 95C69F682A2CE721003733EF /* Build configuration list for PBXNativeTarget "ChaGTPClientUITests" */;
+			buildConfigurationList = 95C69F682A2CE721003733EF /* Build configuration list for PBXNativeTarget "ChatGTPClientUITests" */;
 			buildPhases = (
 				95C69F542A2CE721003733EF /* Sources */,
 				95C69F552A2CE721003733EF /* Frameworks */,
@@ -178,9 +183,9 @@
 			dependencies = (
 				95C69F5A2A2CE721003733EF /* PBXTargetDependency */,
 			);
-			name = ChaGTPClientUITests;
+			name = ChatGTPClientUITests;
 			productName = ChaGTPClientUITests;
-			productReference = 95C69F582A2CE721003733EF /* ChaGTPClientUITests.xctest */;
+			productReference = 95C69F582A2CE721003733EF /* ChatGTPClientUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -206,7 +211,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 95C69F392A2CE71F003733EF /* Build configuration list for PBXProject "ChaGTPClient" */;
+			buildConfigurationList = 95C69F392A2CE71F003733EF /* Build configuration list for PBXProject "ChatGTPClient" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -215,13 +220,16 @@
 				Base,
 			);
 			mainGroup = 95C69F352A2CE71F003733EF;
+			packageReferences = (
+				95C69F6B2A2CE76E003733EF /* XCRemoteSwiftPackageReference "OpenAISwift" */,
+			);
 			productRefGroup = 95C69F3F2A2CE71F003733EF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				95C69F3D2A2CE71F003733EF /* ChaGTPClient */,
-				95C69F4D2A2CE721003733EF /* ChaGTPClientTests */,
-				95C69F572A2CE721003733EF /* ChaGTPClientUITests */,
+				95C69F3D2A2CE71F003733EF /* ChatGTPClient */,
+				95C69F4D2A2CE721003733EF /* ChatGTPClientTests */,
+				95C69F572A2CE721003733EF /* ChatGTPClientUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -257,7 +265,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				95C69F442A2CE71F003733EF /* ContentView.swift in Sources */,
+				95C69F6E2A2CFD93003733EF /* ContentView.swift in Sources */,
 				95C69F422A2CE71F003733EF /* ChaGTPClientApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -284,12 +292,12 @@
 /* Begin PBXTargetDependency section */
 		95C69F502A2CE721003733EF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 95C69F3D2A2CE71F003733EF /* ChaGTPClient */;
+			target = 95C69F3D2A2CE71F003733EF /* ChatGTPClient */;
 			targetProxy = 95C69F4F2A2CE721003733EF /* PBXContainerItemProxy */;
 		};
 		95C69F5A2A2CE721003733EF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 95C69F3D2A2CE71F003733EF /* ChaGTPClient */;
+			target = 95C69F3D2A2CE71F003733EF /* ChatGTPClient */;
 			targetProxy = 95C69F592A2CE721003733EF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -417,6 +425,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ChaGTPClient/Preview Content\"";
+				DEVELOPMENT_TEAM = MJFZ69NMCA;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -445,6 +454,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ChaGTPClient/Preview Content\"";
+				DEVELOPMENT_TEAM = MJFZ69NMCA;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -480,7 +490,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ChaGTPClient.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ChaGTPClient";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ChatGTPClient.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ChatGTPClient";
 			};
 			name = Debug;
 		};
@@ -499,7 +509,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ChaGTPClient.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ChaGTPClient";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ChatGTPClient.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ChatGTPClient";
 			};
 			name = Release;
 		};
@@ -540,7 +550,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		95C69F392A2CE71F003733EF /* Build configuration list for PBXProject "ChaGTPClient" */ = {
+		95C69F392A2CE71F003733EF /* Build configuration list for PBXProject "ChatGTPClient" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				95C69F602A2CE721003733EF /* Debug */,
@@ -549,7 +559,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		95C69F622A2CE721003733EF /* Build configuration list for PBXNativeTarget "ChaGTPClient" */ = {
+		95C69F622A2CE721003733EF /* Build configuration list for PBXNativeTarget "ChatGTPClient" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				95C69F632A2CE721003733EF /* Debug */,
@@ -558,7 +568,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		95C69F652A2CE721003733EF /* Build configuration list for PBXNativeTarget "ChaGTPClientTests" */ = {
+		95C69F652A2CE721003733EF /* Build configuration list for PBXNativeTarget "ChatGTPClientTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				95C69F662A2CE721003733EF /* Debug */,
@@ -567,7 +577,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		95C69F682A2CE721003733EF /* Build configuration list for PBXNativeTarget "ChaGTPClientUITests" */ = {
+		95C69F682A2CE721003733EF /* Build configuration list for PBXNativeTarget "ChatGTPClientUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				95C69F692A2CE721003733EF /* Debug */,
@@ -577,6 +587,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		95C69F6B2A2CE76E003733EF /* XCRemoteSwiftPackageReference "OpenAISwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/adamrushy/OpenAISwift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		95C69F6C2A2CE76E003733EF /* OpenAISwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 95C69F6B2A2CE76E003733EF /* XCRemoteSwiftPackageReference "OpenAISwift" */;
+			productName = OpenAISwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 95C69F362A2CE71F003733EF /* Project object */;
 }
