@@ -24,11 +24,11 @@ final class ViewModel: ObservableObject {
                                maxTokens: 500,
                                completionHandler: { result in
             switch result {
-            case .success(let model):
-                let output = model.choices?.first?.text ?? ""
-                completion(output)
-            case .failure:
-                break
+                case .success(let model):
+                    let output = model.choices?.first?.text ?? ""
+                    completion(output)
+                case .failure:
+                    break
             }
         })
     }
@@ -41,19 +41,28 @@ struct ContentView: View {
     
     
     var body: some View {
-        VStack(alignment: .leading) {
-            ForEach(models, id: \.self) { string in
-                Text(string)
+        VStack {
+            HStack {
+                Text("ChatGPT Client").padding()
             }
-            
-            Spacer()
-            
+
+            ScrollView {
+                ForEach(models, id: \.self) { string in
+                    HStack {
+                        Text(string)
+                            .padding()
+                        Spacer()
+                    }
+                }
+            }
+
             HStack {
                 TextField("Type here...", text: $text)
                     .padding()
                 Button("Send") {
                     send()
                 }
+                .padding()
             }
         }
         .onAppear {
@@ -61,19 +70,16 @@ struct ContentView: View {
         }
         .padding()
     }
-    
+
     func send() {
         guard !text.trimmingCharacters(in: .whitespaces).isEmpty else{
             return
         }
-        
-        models.append("\n")
+
         models.append("Me: \(text)")
         viewModel.send(text: text) {repsonse in
             DispatchQueue.main.async {
                 self.models.append("ChatGPT: " + repsonse)
-                self.text = "\n"
-
             }
         }
     }
